@@ -1,6 +1,9 @@
 % Hacklab constitution
 \documentclass{article}
 \usepackage{palatino}
+\usepackage[rightbars,color]{changebar}
+\cbcolor{red}
+\usepackage{coffee2}
 \usepackage{draftwatermark}
 \title{Constitution of the Edinburgh Hacklab}
 \date{8th December 2010}
@@ -9,6 +12,7 @@
 \renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}}
 \begin{document}
 \maketitle
+\coffee{1}
 \begin{enumerate}
   \item Name
     \begin{enumerate}
@@ -45,25 +49,28 @@
       vote. In this constitution, consensus means that all full
       members have been given the opportunity to object to a decision
       and no reasonable objections have been received within one week.
+      \cbdelete
     \item All members and guests shall refrain from actions or
       behaviour which would have a negative effect on the Hacklab.
     \item The Hacklab shall not be held responsible or liable for
       any actions or behaviour of individuals or groups, whether
       members or guests.
+      \cbstart
     \item This constitution may only be amended at a general meeting.
     \item In addition to this constitution, the Hacklab shall maintain
       a set of Operating Procedures.
     \item All members and guests shall be bound by both this
       constitution and the current Operating Procedures.
+      \cbend
     \end{enumerate} % Organisation
   \item Membership
     \begin{enumerate}
     \item A full member shall have the right to keys and be permitted
       to attend any physical workspaces at any time, to have a single
       vote, to make use of resources and to accompany guests.
-    \item The process for acceptance of new members shall be set out
+    \item \cbstart The process for acceptance of new members shall be set out
       in the Operating Procedures.
-    \item Membership fees shall be set out in the Operating Procedures.
+    \item Membership fees shall be set out in the Operating Procedures. \cbend
     \item The membership fee shall be paid in advance. The form of
       payment shall be monthly by electronic bank transfer or monthly
       by cash.
@@ -168,6 +175,7 @@
       \end{enumerate}
       
 \end{enumerate}
+\coffee{2}
 \bigskip
 Date drafted: 8th December 2010
 \end{document}
