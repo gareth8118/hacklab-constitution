@@ -26,12 +26,13 @@
   \par\hangfrom{{\csname theclause\endcsname}\quad }{#1\par}}
 \newcommand\subclause[1]{%
   \refstepcounter{subclause}
-  \par\hangfrom{{\csname thesubclause\endcsname}\quad }{#1\par}}
+  \par\hangfrom{\quad{\csname thesubclause\endcsname}\quad }{#1\par}}
 \newcommand\subsubclause[1]{%
   \refstepcounter{subsubclause}
-  \par\hangfrom{{\csname thesubsubclause\endcsname}\quad }{#1\par}}
-% 
-% Shortcut to save some typing
+  \par\hangfrom{\quad\quad{\csname thesubsubclause\endcsname}\quad }{#1\par}}
+\addtolength{\parskip}{\baselineskip}
+\setcounter{secnumdepth}{0}
+% % Shortcut to save some typing
 \newcommand{\charityact}{Charities and Trustee Investment (Scotland) Act 2005}
 % End of preamble
 \begin{document}
@@ -70,8 +71,9 @@ must remain in Scotland).}
 \subsection{Powers}
 
 \clause{The Hacklab has power to do anything which is calculated to
-further its purposes or is conducive or incidental to doing so.
-\clause No part of the income or property of the Hacklab may be paid
+further its purposes or is conducive or incidental to doing so.}
+
+\clause{No part of the income or property of the Hacklab may be paid
 or transferred (directly or indirectly) to the members - either in the
 course of the Hacklab's existence or on dissolution - except where
 this is done in direct furtherance of the Hacklab's charitable
@@ -268,7 +270,7 @@ to in clauses \ref{clause:58} to \ref{clause:61}.}
 general meeting (EGM) if they are requested to do so by a notice
 (which may take the form of two or more documents in the same terms,
 each signed by one or more members) by members who amount to
-5\percent\ or more of the total membership of the organisation at the
+5\% or more of the total membership of the organisation at the
 time, providing:}
 
 \subclause{the notice states the purposes for which the meeting is to
@@ -303,7 +305,7 @@ the exact terms of the resolution.}
 calculating the days of notice,}
 
 \subclause{the day after the notices are posted (or sent by email)
-should be excluded; and
+should be excluded; and}
 
 \subclause{the day of the meeting itself should also be excluded.}
 
@@ -342,7 +344,7 @@ meeting.}
 vote - with the exception of the types of resolution listed in clause
 \ref{clause:supermajority}.}
 
-\claus{The following resolutions will be valid only if passed by not
+\clause{The following resolutions will be valid only if passed by not
 less that two-thirds of those voting on the resolution at an AGM or
 EGM (or if passed by way of a written resolution under clause
 \ref{clause:written_resolution}:}
