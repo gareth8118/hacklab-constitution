@@ -2,8 +2,9 @@
 % Drafted by GDE
 \documentclass{article}
 \usepackage{palatino}
+\usepackage{draftwatermark}
 \title{Constitution of Edinburgh Hacklab SCIO - DRAFT}
-\date{3rd November 2011}
+\date{23rd November 2011}
 % Following method of clause numbering is outlined in comp.text.tex
 % posting of 16th Feb 2009
 % 
@@ -30,9 +31,11 @@
 \newcommand\subsubclause[1]{%
   \refstepcounter{subsubclause}
   \par\hangfrom{\quad\quad{\csname thesubsubclause\endcsname}\quad }{#1\par}}
+% Put a gap between the clauses
 \addtolength{\parskip}{\baselineskip}
+% Don't number the headings
 \setcounter{secnumdepth}{0}
-% % Shortcut to save some typing
+% Shortcut to save some typing
 \newcommand{\charityact}{Charities and Trustee Investment (Scotland) Act 2005}
 % End of preamble
 \begin{document}
@@ -58,14 +61,14 @@ must remain in Scotland).}
 \begin{itemize}
 \item promote and and encourage technical, scientific and artistic
   skills and innovation through individual projects, collaboration and
-  education.
+  education;
 \item provide open events to allow the wider community to meet and
-  socialise together.
+  socialise together;
 \item promote and support the use and development of free and open
   technologies, standards, ideas, hardware and software for the
-  benefit of all.
+  benefit of all;
 \item to provide a shared physical workspace, tools, storage and other
-  resources for its members.
+  resources for its members;
 \item work with other bodies with similar or complementary objectives.
 \end{itemize}
 \subsection{Powers}
@@ -91,7 +94,7 @@ purposes.}
   \ref{clause:zero_liability} above does not exclude (or limit) any
   personal liabilities they might incur if they are in breach of those
   duties or in breach of other legal obligations or duties that apply
-  to them personally}
+  to them personally.}
 
 \subsection{Use of Resources}
 
@@ -109,15 +112,15 @@ members or guests.}
 \clause{The structure of the Hacklab consists of}
 
   \subclause{the MEMBERS - who have the right to attend members'
-  meetings (including any annual general meetin) and have important
+  meetings (including any annual general meeting) and have important
   powers under the constitution; in particular, the members appoint
   people to serve on the board and take decisions on changes to the
   constitution itself;}
 
   \subclause{the BOARD - who hold regular meetings, and generally
-  control the activities of the organisation; for example; the board
+  control the activities of the Hacklab; for example; the board
   is responsible for monitoring and controlling the financial position
-  of the organisation}
+  of the Hacklab}
 
 \clause{The people serving on the board are referred to in this
 constitution as CHARITY TRUSTEES.}
@@ -136,9 +139,9 @@ guests\footnote{GDE: I've taken the ``key'' right out of this due to
 [insert membership qualifications]\footnote{GDE: totally not sure what
   we want to put in here. How should we define membership eligibility?
   Living in Edinburgh? Living in East of Scotland? There's a pretty
-  full discussion in the OSCR Charity Test document}}
+  full discussion in the OSCR Charity Test document}.}
 
-\clause{Employees of the organisation are not eligible for membership.}
+\clause{Employees of the Hacklab are not eligible for membership.}
 
 \subsection{Application for membership}
 
@@ -156,7 +159,7 @@ to membership.\footnote{GDE: The SCVO Model Constitution that I'm
   and submit to see what happens. Thoughts?}}
  
 \clause{The board must notify each applicant promptly (in writing or
-by email) of its decision on whether or not to admit him/her to
+by e-mail) of its decision on whether or not to admit him/her to
 membership.}
 
 \subsection{Membership subscription}
@@ -166,8 +169,7 @@ subscription; unless and until otherwise determined by the members,
 the amount of the monthly membership subscription shall be \pounds 30.}
 
 \clause{The monthly membership subscriptions shall be payable on or
-before the day of the month on which the member originally joined in
-each month.}
+before the day of the month on which the member originally joined.}
 
 \clause{The members may vary the amount of the monthly membership fee
 by way of a resolution to that effect passed at an AGM.}
@@ -176,9 +178,9 @@ by way of a resolution to that effect passed at an AGM.}
   outstanding more than 3 months\footnote{GDE: I've been working on
     the basis of not chasing subs until they are 3 months overdue - do
     we want to tighten this up?} after the date on which it fell due -
-  and providing he/she has been given at least one written reminder -
-  the board may, by resolution to that effect, expel him/her from
-  membership.}
+  and providing he/she has been given at least one reminder (either in
+  writing or by e-mail) - the board may, by resolution to that effect,
+  expel him/her from membership.}
 
 \clause{A person who ceases (for whatever reason) to be a member shall
 not be entitled to any refund of the membership subscription.}
@@ -192,7 +194,7 @@ not be entitled to any refund of the membership subscription.}
 \subsubclause{his/her full name and address; and}
 
 \subsubclause{the date on which he/she was registered as a member of
-the organisation}
+the Hacklab}
 
 \subclause{for each former member - for at least 6 years from the date
 on he/she ceased to be a member:}
@@ -219,9 +221,10 @@ out.}
 \subsection{Withdrawal from membership}
 
 \clause{Any person who wants to withdraw from membership must give
-written notice of withdrawal to the Hacklab, signed by him or her; he
-or she will cease to be a member as from the time when the notice is
-received by the Hacklab.}
+  written notice of withdrawal to the Hacklab, signed by him or her,
+  or as an e-mail to one or more of the charity trustees; he or she will
+  cease to be a member as from the time when the notice is received by
+  the Hacklab.}
 
 \clause{Upon ceasing to be a members, all keys, access tokens or
 Hacklab property must be returned to the Hacklab.}
@@ -232,9 +235,9 @@ Hacklab property must be returned to the Hacklab.}
 
 \subsection{Expulsion from membership}
 
-\clause{Any person may be expelled from membership by way of a
+\clause{\label{clause:expel}Any person may be expelled from membership by way of a
 resolution passed by not less than two thirds of those present and
-voting at a members' meeting, providing the following procedures have
+voting at a general meeting, providing the following procedures have
 been observed:}
 
 \subclause{at least 21 days notice of the intention to propose the
@@ -242,24 +245,24 @@ resolution must be given to the member concerned, specifying the
 grounds for the proposed expulsion;}
 
 \subclause{the member concerned will be entitled to be heard on the
-resolution at the members' meeting at which the resolution is
+resolution at the general meeting at which the resolution is
 proposed.}
 
 \section {DECISION MAKING BY THE MEMBERS}
 
-\subsection{Members' Meetings}
+\subsection{General Meetings}
 
 \clause{The board must arrange a meeting of members (an annual general
 meeting or ``AGM'' in the month of April each calendar year.}
 
 \clause{The business of each AGM must include:}
 
-\subclause{a report by the chair on the activities of the organisation;}
+\subclause{a report by the chair on the activities of the Hacklab;}
 
-\subclause{consideration of the annual accounts of the organisation; and}
+\subclause{consideration of the annual accounts of the Hacklab; and}
 
 \subclause{the election/re-election of charity trustees, as referred
-to in clauses \ref{clause:58} to \ref{clause:61}.}
+to in clauses \ref{clause:boardelection} to \ref{clause:trusteereelection}.}
 
 \clause{The board may arrange an extraordinary general meeting at any time.}
 
@@ -270,7 +273,7 @@ to in clauses \ref{clause:58} to \ref{clause:61}.}
 general meeting (EGM) if they are requested to do so by a notice
 (which may take the form of two or more documents in the same terms,
 each signed by one or more members) by members who amount to
-5\% or more of the total membership of the organisation at the
+5\% or more of the total membership of the Hacklab at the
 time, providing:}
 
 \subclause{the notice states the purposes for which the meeting is to
@@ -297,14 +300,14 @@ what business is to be dealt with at the meeting; and}
 set out the exact terms of the proposed alteration(s); or}
 
 \subclause{in the case of any other resolution falling within clause
-\ref{clause:45} (requirement for a two-thirds majority) must set out
+\ref{clause:supermajority} (requirement for a two-thirds majority) must set out
 the exact terms of the resolution.}
 
 \clause{The reference to ``clear days'' in clause
 \ref{clause:meeting_notice} shall be taken to mean that, in
 calculating the days of notice,}
 
-\subclause{the day after the notices are posted (or sent by email)
+\subclause{the day after the notices are posted (or sent by e-mail)
 should be excluded; and}
 
 \subclause{the day of the meeting itself should also be excluded.}
@@ -325,7 +328,7 @@ quorum is present.}
 
 \clause{The quorum for a general meeting is one half the membership at
 the time of the meeting, present in person\footnote{GDE: this is a
-  guess. 1/3 seems too few.}.}
+  guess. 1/3 seems too few for our current membership count.}.}
 
 \clause{If quorum is not present within 15 minutes after the time at
 which a general meeting was due to start - or if a quorum ceases to be
@@ -344,10 +347,10 @@ meeting.}
 vote - with the exception of the types of resolution listed in clause
 \ref{clause:supermajority}.}
 
-\clause{The following resolutions will be valid only if passed by not
+\clause{\label{clause:supermajority}The following resolutions will be valid only if passed by not
 less that two-thirds of those voting on the resolution at an AGM or
 EGM (or if passed by way of a written resolution under clause
-\ref{clause:written_resolution}:}
+\ref{clause:writtenresolution}):}
 
 \subclause{a resolution amending the constitution;}
 
@@ -364,10 +367,10 @@ constituted as the successor pursuant to that amalgamation);}
 \subclause{a resolution to the effect that all of the Hacklab's
 property, rights and liabilities should be transferred to another SCIO
 (or agreeing to the transfer from another SCIO of all of its property,
-rights and liablities);}
+rights and liabilities);}
 
 \subclause{a resolution for the winding up or dissolution of the
-organisation.}
+Hacklab.}
 
 \clause{If there is an equal number of votes for and against any
 resolution, the chairperson of the meeting will be entitled to a
@@ -384,10 +387,10 @@ meeting\footnote{GDE: this allows us, in particular, to elect trustees
 
 \subsection{Written resolutions by members}
 
-\clause{A resolution agreed to in writing (or by e-mail) by all the
-members will be as valid as if it had been passed at a general
-meeting; the date of the resolution will be taken to be the date on
-which the last member agreed to it.}
+\clause{\label{clause:writtenresolution}A resolution agreed to in
+  writing (or by e-mail) by all the members will be as valid as if it
+  had been passed at a general meeting; the date of the resolution
+  will be taken to be the date on which the last member agreed to it.}
 
 \subsection{Minutes}
 
@@ -404,7 +407,7 @@ of the meeting.}
 
 \clause{There shall be 3 charity trustees\footnote{GDE: I'm starting
     to think that we need 5 trustees (with a quorum of 3) to make sure
-    we are legal at all times.}}
+    we are legal at all times. Thoughts?}}
 
 \subsection{Treasurer}
 
@@ -420,13 +423,13 @@ hold that office:}
 
 \subclause{if he/she ceases to be a charity trustee; or}
 
-\subclause{if he/she gives to the organisation a notice of resignation
+\subclause{if he/she gives to the Hacklab a notice of resignation
 from that office, signed by him/her.}
 
 \subsection{Eligibility}
 
-\clause{A person will not be eligible for election to the board unless
-he/she is a member of the Hacklab.}
+\clause{\label{clause:disqualified}A person will not be eligible for
+  election to the board unless he/she is a member of the Hacklab.}
 
 \clause{A person will not be eligible for election to the board if
 he/she is:}
@@ -478,8 +481,8 @@ be a period of one year;}
 reelected to that office within a period of six months, he/she shall
 be deemed to have held office as a charity trustee continuously.}
 
-\clause{A charity trustee retiring at an AGM will be deemed to have
-been re-elected unless:}
+\clause{\label{clause:trusteereelection}A charity trustee retiring at
+  an AGM will be deemed to have been re-elected unless:}
 
 \subclause{he/she advises the board prior to the conclusion of the AGM
 that he/she does not wish to be reappointed as a charity trustee; or}
@@ -576,7 +579,7 @@ passed by members of the Hacklab; or}
 trustees, the board must ensure that a copy is supplied to him/her
 within 28 days, providing the request is reasonable; if the request is
 made by a person who is not a charity trustee of the Hacklab, the
-baord may provide a copy which has the addresses blanked out - if the
+board may provide a copy which has the addresses blanked out - if the
 SCIO is satisfied that including that information is likely to
 jeopardise the safety or security of any person or premises.}
 
@@ -586,7 +589,7 @@ jeopardise the safety or security of any person or premises.}
 Hacklab (and its assets and operations) will be managed by the
 board; and the board may exercise all the powers of the Hacklab.}
 
-\clause{A meeting of the board at which a quorum is preset may
+\clause{A meeting of the board at which a quorum is present may
 exercise all powers exercisable by the board.}
 
 \clause{The members may, by way of a resolution passed in compliance
@@ -601,7 +604,7 @@ to any such direction accordingly.}
   duty, in exercising functions as a charity trustee, to act in the
   interests of the Hacklab; and in particular, must:}
 
-\subclause{seek, in good faith, to ensure that the organisation acts
+\subclause{seek, in good faith, to ensure that the Hacklab acts
   in a manner which is in accordance with its purposes;}
 
 \subclause{act with the care and diligence which it is reasonable to
@@ -657,13 +660,14 @@ at meetings\footnote{GDE: this is boilerplate from the model
 
 \subsection{Code of conduct for charity trustees}
 
-\clause{Each of the charity trustees shall comply with the code of
-  conduct (incorporating detailed rules on conflict of interest)
-  prescribed by the board from time to time\footnote{GDE: no, I don't
-    have a code of conduct written. The commentary on this clause says
-    ``The reference to a code of conduct is in line with principles of
-    best practice in governance.'' If anyone can decode that into what
-    the code of conduct should actually look like, please jump in.}.}
+\clause{\label{clause:codeofconduct}Each of the charity trustees shall
+  comply with the code of conduct (incorporating detailed rules on
+  conflict of interest) prescribed by the board from time to
+  time\footnote{GDE: no, I don't have a code of conduct written. The
+    commentary on this clause says ``The reference to a code of
+    conduct is in line with principles of best practice in
+    governance.'' If anyone can decode that into what the code of
+    conduct should actually look like, please jump in.}.}
 
 \clause{The code of conduct referred to in clause
   \ref{clause:codeofconduct} shall be supplemental to the conduct of
@@ -717,14 +721,14 @@ at meetings\footnote{GDE: this is boilerplate from the model
 \clause{\label{clause:conflictofinterest}A charity trustee must not
   vote at a board meeting (or at a meeting of a sub-committee) on any
   resolution which relates to a matter in which he/she has a personal
-  interest or duty which conflicys (or may conflict) with the
+  interest or duty which conflicts (or may conflict) with the
   interests of the Hacklab; he/she must withdraw from the meeting
   while an item of that nature is being dealt with.}
 
 \clause{For the purposes of clause \ref{clause:conflictofinterest}:}
 
 \subclause{an interest held by an individual who is ``connected'' with
-  the charity trustee under section 68(2) of the \charityact
+  the charity trustee under section 68(2) of the \charityact\ 
   (husband/wife, partner, child, parent, brother/sister etc) shall be
   deemed to be held by that charity trustee.}
 
@@ -805,10 +809,10 @@ account must be consistent with the approach reflected in clause
 or dissolution process will be carried out in accordance with the
 procedures set out under the \charityact.}
 
-\clause{Any surplus assets available to the organisation immediately
+\clause{Any surplus assets available to the Hacklab immediately
 preceding its winding up or dissolution must be used for purposes
 which are the same as - or which closely resemble - the purposes of
-the organisation as set out in this constitution.}
+the Hacklab as set out in this constitution.}
 
 \subsection{Alterations to the constitution}
 
@@ -828,8 +832,8 @@ Scottish Charity Regulator (OSCR).}
 \clause{References in this constitution to the \charityact\ should be
 taken to include:}
 
-\subclause{any statutory provision which adds to, modifies or replaces
-that Act; and}
+\subclause{\label{clause:statutoryprovisions}any statutory provision
+  which adds to, modifies or replaces that Act; and}
 
 \subclause{any statutory instrument issued in pursuance of that Act or
 in pursuance of any statutory provision falling under clause
