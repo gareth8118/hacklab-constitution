@@ -2,7 +2,7 @@
 
 PDFLATEX = pdflatex
 
-all: hacklab_constitution.pdf
+all: hacklab_constitution.pdf hacklab_procedures.pdf
 
 hacklab_constitution.pdf: hacklab_constitution.tex
 	while ($(PDFLATEX) $< ; \
