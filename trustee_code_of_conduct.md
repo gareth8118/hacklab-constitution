@@ -15,6 +15,6 @@ It is the responsibility of the trustees to:
 
 Trustees are expected to honour the content and spirit of this code.
 
-Signed (name and date)
+Sign, print name name and date:
 
 
